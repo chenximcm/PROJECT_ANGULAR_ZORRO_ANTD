@@ -6,6 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { IntelligentizeComponent } from './intelligentize/intelligentize.component';
+import { AlgorithmComponent } from './algorithm/algorithm.component';
+
 /** 配置 angular i18n **/
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
@@ -13,7 +17,10 @@ registerLocaleData(zh);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    IntelligentizeComponent,
+    AlgorithmComponent
   ],
   imports: [
     BrowserModule,
